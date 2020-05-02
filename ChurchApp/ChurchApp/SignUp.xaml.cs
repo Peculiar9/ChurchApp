@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ChurchApp.Views
+namespace ChurchApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SignUp : ContentPage
@@ -15,11 +15,6 @@ namespace ChurchApp.Views
         public SignUp()
         {
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-
         }
     }
 }
