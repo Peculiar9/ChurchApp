@@ -17,7 +17,7 @@
                    HeightRequest="60" 
                    />
             </StackLayout>
-            <StackLayout Grid.Row="1" Margin="0">
+            <StackLayout BackgroundColor="Black" Grid.Row="1" Margin="0">
                 <Label
                     Margin="10"
                     Text="Welcome back!" 
@@ -46,6 +46,12 @@
                         HorizontalOptions="End"
                         BackgroundColor="#294FCC"
                         />
+                <StackLayout >
+                    <StackLayout Orientation="Horizontal" Grid.Row="3" HorizontalOptions="CenterAndExpand" Spacing="20">
+                        <Image Source="C:\Users\HP\source\repos\ChurchApp\ChurchApp\ChurchApp.Android\Resources\drawable\facebook.png"/>
+                    </StackLayout>
+                    
+                </StackLayout>
             </StackLayout>
         </Grid>
     </ContentPage.Content>
