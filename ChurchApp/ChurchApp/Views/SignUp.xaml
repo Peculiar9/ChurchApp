@@ -50,7 +50,7 @@
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
                     <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand">
-                    
+                      
                         
                     
                     </StackLayout>
