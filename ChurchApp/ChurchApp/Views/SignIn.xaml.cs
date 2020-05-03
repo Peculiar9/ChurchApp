@@ -16,5 +16,10 @@ namespace ChurchApp.Views
         {
             InitializeComponent();
         }
+
+        private void SignInBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
