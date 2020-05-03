@@ -26,19 +26,35 @@
                     FontFamily="Sergio UI"/>
             </StackLayout>
             <StackLayout Spacing="20" Padding="15" Grid.Row="2" Margin="1,0,10,10">
-                <Entry Text="{Binding Item.Text}"  FontSize="Small" Placeholder="FirstName" Keyboard="Text" />
-                <Entry Text="{Binding Item.Text}"  FontSize="Small" Placeholder="LastName" Keyboard="Text"/>
-                <Entry Text="{Binding Item.Text}"  FontSize="Small" Placeholder="LastName" Keyboard="Text"/>
-                <Entry Text="{Binding Item.Text}"  FontSize="Small" Placeholder="LastName" Keyboard="Text"/>
-                <Entry Text="{Binding Item.Text}"  FontSize="Small" Placeholder="LastName" Keyboard="Text"/>
+                <Entry Text="{Binding Item.Text}"  FontSize="Small" Placeholder="First Name" Keyboard="Text" />
+                <Entry Text="{Binding Item.Text}"  FontSize="Small" Placeholder="Last Name" Keyboard="Text"/>
+                <Entry Text="{Binding Item.Text}"  FontSize="Small" Placeholder="Email" Keyboard="Text"/>
+                <Entry Text="{Binding Item.Text}"  FontSize="Small" Placeholder="Username" Keyboard="Text"/>
+                <Entry Text="{Binding Item.Text}"  FontSize="Small" Placeholder="Password" IsPassword="True" Keyboard="Text"/>
+                <StackLayout Grid.Row="3">
+                    <Label  Text="Birth Date"
+                            FontSize="19"
+                            FontAttributes="Italic"/>
+                    <DatePicker TextColor="AntiqueWhite" Date=""/>
+                </StackLayout>
                 <Button Text="SignUp" x:Name="SignUpBtn" TextColor="White"
                         FontAttributes="Bold"
-                        WidthRequest="100"
-                        HeightRequest="40"
-                        CornerRadius="16"
+                        WidthRequest="143"
+                        HeightRequest="35"
+                        CornerRadius="20"
                         HorizontalOptions="End"
                         BackgroundColor="#294FCC"
                         Clicked="Button_Clicked"/>
+                <Grid  >
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand">
+                    
+                        
+                    
+                    </StackLayout>
+              </Grid>
             </StackLayout>
         </Grid>
     </ContentPage.Content>
