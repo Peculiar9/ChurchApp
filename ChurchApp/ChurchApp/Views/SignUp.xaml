@@ -48,16 +48,24 @@
                       Spacing="15"
                     
                      >
-                    <Entry Text="{Binding Item.FirstName}" x:Name="Firstname" Placeholder="First Name" Keyboard="Text" Opacity="12" TextColor=""/>
-                    <Entry Text="{Binding Item.UserName}" x:Name="Lastname" Placeholder="Last Name" Keyboard="Text" Opacity="12" TextColor=""/>
-                    <Entry Text="{Binding Item.Email}" x:Name="Email" Placeholder="Email" Keyboard="Text" Opacity="12" TextColor=""/>
-                    <Entry Text="{Binding Item.Password}" x:Name="Password" Placeholder="Password" Keyboard="Text" IsPassword="True" Opacity="12" TextColor=""/>
-                    <Entry Text="{Binding Item.Password}" x:Name="CPassword" Placeholder="Confirm Password" Keyboard="Text" IsPassword="True" Opacity="12" TextColor=""/>
+                    <Entry Text="{Binding Item.FirstName}" x:Name="Firstname" Placeholder="First Name" Keyboard="Text" Opacity="12"/>
+                    <Entry Text="{Binding Item.UserName}" x:Name="Lastname" Placeholder="Last Name" Keyboard="Text" Opacity="12" />
+                    <Entry Text="{Binding Item.Email}" x:Name="Email" Placeholder="Email" Keyboard="Text" Opacity="12" />
+                    <Entry Text="{Binding Item.Password}" x:Name="Password" Placeholder="Password" Keyboard="Text" IsPassword="True" Opacity="12"/>
+                    <Entry Text="{Binding Item.Password}" x:Name="CPassword" Placeholder="Confirm Password" Keyboard="Text" IsPassword="True" Opacity="12" />
                      
                 </StackLayout>
                 <StackLayout >
                     <Label Text="Birth Date" FontAttributes="Bold,Italic" FontSize="Large"/>
                     <DatePicker MaximumDate="2-06-2007" MinimumDate="01-01-1987"/>
+                    <Label Text="Location" FontAttributes="Italic" FontSize="Medium" Margin="1,10,30,0"/>
+
+                    <Picker x:Name="Location">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
                 </StackLayout>
                 <Label HorizontalOptions="CenterAndExpand">
                     <Label.FormattedText>
@@ -81,8 +89,8 @@
                         BackgroundColor="{StaticResource Accent}"
                         TextColor="White" />
                 <Label Text="or" HorizontalOptions="CenterAndExpand"/>
-                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="20">
-                    <ImageButton Source="google.png" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="40">
+                    <ImageButton Source="google.png"/>
                     <ImageButton Source="facebook.png" />
                 </StackLayout>
                 
@@ -90,9 +98,9 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="It shares code with its" />
+                                <Span Text="A product of" />
                                 <Span Text=" " />
-                                <Span Text="iOS, Android, and Windows" FontAttributes="Bold" />
+                                <Span Text="Xamarin Developers" FontAttributes="Italic" LineHeight="10"/>
                                 <Span Text=" " />
                                 <Span Text="versions." />
                             </FormattedString.Spans>
