@@ -81,7 +81,6 @@
                 </Label>
                
                 <Button Margin="0,10,0,0" Text="Sign Up"
-                        Command="{Binding OpenWebCommand}"
                         WidthRequest="143"
                         HeightRequest="40"
                         HorizontalOptions="EndAndExpand"
