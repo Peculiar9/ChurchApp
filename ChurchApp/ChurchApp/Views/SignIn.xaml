@@ -49,9 +49,9 @@
                         />
                 <StackLayout >
                     <Label Text="or" HorizontalOptions="CenterAndExpand" TextColor="#777" FontSize="Small"/>
-                    <StackLayout Orientation="Horizontal" Margin="20" Grid.Row="3" HorizontalOptions="CenterAndExpand" Spacing="20">
-                        <Image Source="facebook.png"/>
-                        <Image Source="google.png"/>
+                    <StackLayout Orientation="Horizontal" Margin="20" Grid.Row="3" HorizontalOptions="CenterAndExpand" Spacing="40">
+                        <ImageButton Source="google.png"/>
+                        <ImageButton Source="facebook.png"/>
                     </StackLayout>
                     
                 </StackLayout>
