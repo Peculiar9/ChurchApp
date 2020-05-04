@@ -75,10 +75,17 @@
                 <Button Margin="0,10,0,0" Text="Sign Up"
                         Command="{Binding OpenWebCommand}"
                         WidthRequest="143"
+                        HeightRequest="40"
                         HorizontalOptions="EndAndExpand"
-                        CornerRadius="10"
+                        CornerRadius="20"
                         BackgroundColor="{StaticResource Accent}"
                         TextColor="White" />
+                <Label Text="or" HorizontalOptions="CenterAndExpand"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="20">
+                    <ImageButton Source="google.png" />
+                    <ImageButton Source="facebook.png" />
+                </StackLayout>
+                
                 <Label>
                     <Label.FormattedText>
                         <FormattedString>
