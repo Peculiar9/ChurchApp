@@ -17,7 +17,7 @@
                    HeightRequest="60" 
                    />
             </StackLayout>
-            <StackLayout BackgroundColor="Black" Grid.Row="1" Margin="0">
+            <StackLayout Grid.Row="1" Margin="0">
                 <Label
                     Margin="10"
                     Text="Welcome back!" 
@@ -32,6 +32,7 @@
                 <Entry Placeholder="Username or Email" Keyboard="Email"/>
                 <Entry Placeholder="Password" Keyboard="Text" IsPassword="True"/>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,0,0,30" WidthRequest="300">
+                    
                     <Label Text="Remind me" FontAttributes="Bold"/>
                     <Label Text="Forgot Password?" FontAttributes="Bold" TextColor="#587BEE" HorizontalOptions="End"/>
 
@@ -47,8 +48,10 @@
                         BackgroundColor="#294FCC"
                         />
                 <StackLayout >
-                    <StackLayout Orientation="Horizontal" Grid.Row="3" HorizontalOptions="CenterAndExpand" Spacing="20">
-                        <Image Source="C:\Users\HP\source\repos\ChurchApp\ChurchApp\ChurchApp.Android\Resources\drawable\facebook.png"/>
+                    <Label Text="or" HorizontalOptions="CenterAndExpand" TextColor="#777" FontSize="Small"/>
+                    <StackLayout Orientation="Horizontal" Margin="20" Grid.Row="3" HorizontalOptions="CenterAndExpand" Spacing="20">
+                        <Image Source="facebook.png"/>
+                        <Image Source="google.png"/>
                     </StackLayout>
                     
                 </StackLayout>
