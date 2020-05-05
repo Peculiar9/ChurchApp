@@ -1,15 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ChurchApp.Views.Entry">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+             x:Class="ChurchApp.Views.TabbedPage1">
+  <!--Pages can be added as references or inline-->
+    
+    <TabbedPage.Title>{Binding Title}</TabbedPage.Title>
+    <ContentPage Title="Sermons" >
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height=""/>
+            </Grid.RowDefinitions>
+            <BoxView Grid.Row="0" Margin="2" BindingContext="{Binding Title}"/>
+            <Label Text="Hello People" FontSize="Large" TextColor="Black"/>
+        </Grid>
+    </ContentPage>
+    <ContentPage Title="Books" />
+  <ContentPage Title="Videos" />
+  <ContentPage Title="Downloads" />
+</TabbedPage>

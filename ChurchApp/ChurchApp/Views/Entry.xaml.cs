@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace ChurchApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Entry : ContentPage
+    public partial class TabbedPage1 : TabbedPage
     {
-        public Entry()
+        public TabbedPage1()
         {
             InitializeComponent();
         }

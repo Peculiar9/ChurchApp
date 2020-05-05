@@ -14,7 +14,7 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="Primary">#B9B9BB</Color>
             <Color x:Key="Accent">#294FCC</Color>
             <Color x:Key="LightTextColor">#999999</Color>
         </ResourceDictionary>
@@ -34,11 +34,11 @@
         </StackLayout>
         <ScrollView Grid.Row="1">
             <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
-                <Label FontSize="22">
+                <Label FontSize="28" Margin="10, 0, 0, 0">
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Create an account" FontAttributes="Bold"  FontSize="22" />
+                                <Span Text="Create an account" TextColor="{StaticResource Primary}" FontAttributes="Bold" FontSize="Header" />
                                 <Span Text=" " />
                             </FormattedString.Spans>
                         </FormattedString>
@@ -46,27 +46,30 @@
                 </Label>
                 <StackLayout
                       Spacing="15"
-                    
+                      Padding="10"
                      >
-                    <Entry Text="{Binding Item.FirstName}" x:Name="Firstname" Placeholder="First Name" Keyboard="Text" Opacity="12"/>
-                    <Entry Text="{Binding Item.UserName}" x:Name="Lastname" Placeholder="Last Name" Keyboard="Text" Opacity="12" />
-                    <Entry Text="{Binding Item.Email}" x:Name="Email" Placeholder="Email" Keyboard="Text" Opacity="12" />
-                    <Entry Text="{Binding Item.Password}" x:Name="Password" Placeholder="Password" Keyboard="Text" IsPassword="True" Opacity="12"/>
-                    <Entry Text="{Binding Item.Password}" x:Name="CPassword" Placeholder="Confirm Password" Keyboard="Text" IsPassword="True" Opacity="12" />
+                    <Entry Text="{Binding Item.FirstName}" IsSpellCheckEnabled="False" TextColor="{StaticResource Primary}" FontSize="Small" x:Name="Firstname" Placeholder="First Name" Keyboard="Text" Opacity="12"/>
+                    <Entry Text="{Binding Item.UserName}" TextColor="{StaticResource Primary}" FontSize="Small" x:Name="Lastname" Placeholder="Last Name" Keyboard="Text" Opacity="12" />
+                    <Entry Text="{Binding Item.Email}" TextColor="{StaticResource Primary}" FontSize="Small" x:Name="Email" Placeholder="Email" Keyboard="Text" Opacity="12" />
+                    <Entry Text="{Binding Item.Password}" TextColor="{StaticResource Primary}" FontSize="Small" x:Name="Password" Placeholder="Password" Keyboard="Text" IsPassword="True" Opacity="12"/>
+                    <Entry Text="{Binding Item.Password}" TextColor="{StaticResource Primary}" FontSize="Small" x:Name="CPassword" Placeholder="Confirm Password" Keyboard="Text" IsPassword="True" Opacity="12" />
                      
                 </StackLayout>
-                <StackLayout >
+                <StackLayout Padding="10">
                     <Label Text="Birth Date" FontAttributes="Bold,Italic" FontSize="Large"/>
-                    <DatePicker MaximumDate="2-06-2007" MinimumDate="01-01-1987"/>
+                    <DatePicker MaximumDate="2-06-2007" MinimumDate="01-01-1987" TextColor="{StaticResource Primary}"/>
                     <Label Text="Location" FontAttributes="Italic" FontSize="Medium" Margin="1,10,30,0"/>
 
                     <Picker x:Name="Location">
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
+                                <x:String>Ikoyi Lagos</x:String>
+                                <x:String>Garki Abuja</x:String>
                             </x:Array>
                         </Picker.ItemsSource>
                     </Picker>
                 </StackLayout>
+
                 <Label HorizontalOptions="CenterAndExpand">
                     <Label.FormattedText>
                         <FormattedString >
