@@ -24,7 +24,7 @@ namespace ChurchApp
             //    DependencyService.Register<MockDataStore>();
             //else
             //    DependencyService.Register<AzureDataStore>();
-            MainPage = new SignUp();
+            MainPage = new NavigationPage(new SignUp());
         }
 
         protected override void OnStart()

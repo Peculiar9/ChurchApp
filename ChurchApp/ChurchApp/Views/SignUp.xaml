@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="ChurchApp.Views.SignUp"
              xmlns:vm="clr-namespace:ChurchApp.ViewModels"
+             Resources="Segeo.ttf"   
              Title="{Binding Title}">
 
     <ContentPage.BindingContext>
@@ -17,7 +18,7 @@
             <Color x:Key="Primary">#B9B9BB</Color>
             <Color x:Key="Accent">#294FCC</Color>
             <Color x:Key="LightTextColor">#999999</Color>
-        </ResourceDictionary>
+            </ResourceDictionary>
     </ContentPage.Resources>
 
     <Grid>
@@ -38,7 +39,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Create an account" TextColor="{StaticResource Primary}" FontAttributes="Bold" FontSize="Header" />
+                                <Span Text="Create an account" TextColor="{StaticResource Primary}" FontAttributes="Bold" FontSize="28" />
                                 <Span Text=" " />
                             </FormattedString.Spans>
                         </FormattedString>
@@ -70,22 +71,20 @@
                     </Picker>
                 </StackLayout>
 
-                <Label HorizontalOptions="CenterAndExpand">
-                    <Label.FormattedText>
-                        <FormattedString >
-                            <FormattedString.Spans>
-                                <Span Text="Already Have an account?" />
-                                <Span Text=" " />
-                                <Span Text="SignIn" FontAttributes="Bold" TextColor="#587BEE" />
-                                <Span Text="." />
-                            </FormattedString.Spans>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-               
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="CenterAndExpand"
+                    >
+                    <Label Text="Already have an account?"/>
+                    <Label Text="Signin" TextColor="{StaticResource Accent}" FontAttributes="Bold">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
                 <Button Margin="0,10,0,0" Text="Sign Up"
                         WidthRequest="143"
                         HeightRequest="40"
+                        Clicked="SignUpBtn_Clicked"
                         HorizontalOptions="EndAndExpand"
                         CornerRadius="20"
                         BackgroundColor="{StaticResource Accent}"
@@ -94,6 +93,7 @@
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="40">
                     <ImageButton Source="google.png"/>
                     <ImageButton Source="facebook.png" />
+                        
                 </StackLayout>
                 
                 <Label>

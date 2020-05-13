@@ -4,12 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
              x:Class="ChurchApp.Views.Splash">
     <ContentPage.Content>
         <StackLayout 
             BackgroundColor="#294FCC"
             >
-            <Image Source="church.logo" VerticalOptions="CenterAndExpand" WidthRequest="200"/>
+            <Image Source="church.logo" VerticalOptions="CenterAndExpand" WidthRequest="100" x:Name="Logo"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

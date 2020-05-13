@@ -15,6 +15,7 @@
             </Grid.RowDefinitions>
             <BoxView Grid.Row="0" Margin="2" BindingContext="{Binding Title}"/>
             <Label Text="Hello People" FontSize="Large" TextColor="Black"/>
+            
         </Grid>
     </ContentPage>
     <ContentPage Title="Books" />
